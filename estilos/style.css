@@ -24,22 +24,109 @@ header {
     text-align: center;
     background-color: #000000;
     color: #ffffff;
-    font-family: var(--font02);
+    font-family: var(--font01);
+    padding: 5px;
 }
 
 main {
-    padding-top: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(https://network.grupoabril.com.br/wp-content/uploads/sites/4/2016/12/livro-e-cafe.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 10px;
 }
 
 main > form {
     width: 300px;
     height: 400px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: brown;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 main > form > div.imagem > img{
     width: 100%;
     height: 200px;
+}
+
+div.usuario, div.senha {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+img.user, img.password {
+    width: 40px;
+    height: 40px;
+}
+
+input#iuser, input#ipassword {
+    padding: 3px;
+    width: 60%;
+}
+
+div.es {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+}
+
+div.es > a {
+    color: #000000;
+    font-size: 1.1em;
+    text-decoration: none;
+    font-family: var(--font02);
+}
+
+div.es > a:hover {
+    transition: 0.5s;
+    font-size: 1.21em;
+}
+
+div.submit {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+input.submit {
+    padding: 5px;
+    border-radius: 10px;
+    width: 40%;
+    font-size: 1em;
+    text-shadow: 0px 0px 1px #000000;
+}
+
+input.submit:hover {
+    transition: 0.3s;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #000000d0;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+}
+
+footer > p > a {
+    color: #ffffffe3;
+    text-decoration: none;
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
 }

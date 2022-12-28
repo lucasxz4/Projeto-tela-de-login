@@ -19,18 +19,23 @@
                 <img src="imagens/fundo.jpg" alt="Imagem Educacional">
             </div>
             <div class="usuario">
-                <img src="imagens/person_FILL0_wght400_GRAD0_opsz48.png" alt="Icon User" class="user">
-                <input type="email" name="user" id="iuser" required placeholder="Seu e-mail">
+                <label for="iuser"><img src="imagens/person_FILL0_wght400_GRAD0_opsz48.png" alt="Icon User" class="user"></label>
+                <input type="email" name="user" id="iuser" required placeholder="example@gmail.com">
             </div>
             <div class="senha">
-                <img src="imagens/lock_FILL0_wght400_GRAD0_opsz48.png" alt="Icon Senha" class="password">
-                <input type="password" name="password" id="ipassword" required placeholder="Sua senha">
+                <label for="ipassword"><img src="imagens/lock_FILL0_wght400_GRAD0_opsz48.png" alt="Icon Senha" class="password"></label>
+                <input type="password" name="password" id="ipassword" required minlength="8">
             </div>
             <div class="es">
                 <a href="#">Esqueceu a senha?</a>
             </div>
-            <input type="submit" value="Entrar" class="submit">
+            <div class="submit">
+                <input type="submit" value="Entrar" class="submit">
+            </div>
         </form>
     </main>
+    <footer>
+        <p>Site criado por <a href="https://api.whatsapp.com/send?phone=5588981458537" target="_blank" rel="external">Lucas Emanuel</a>.</p>
+    </footer>
 </body>
 </html>
