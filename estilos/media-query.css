@@ -1,2 +1,26 @@
 @charset "UTF-8";
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+        background-color: #8080809a;
+    }
+    main {
+        width: 80%;
+        border-radius: 10px;
+    }
+    main > form {
+        width: 100%;
+    }
+    main > form > div.imagem {
+        width: 300px;
+        margin: auto;
+    }
+    input#iuser, input#ipassword {
+        width: 45%;    
+    }
+}
 
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    body {
+        background: linear-gradient(to top, #585C72, #4D5061, #777E99);
+    }
+}
