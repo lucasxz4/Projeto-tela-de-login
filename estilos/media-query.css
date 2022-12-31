@@ -23,4 +23,13 @@
     body {
         background: linear-gradient(to top, #585C72, #4D5061, #777E99);
     }
+    header {
+        font-size: 1.3rem;
+    }
+    main {
+        width: 70%;
+    }
+    main > form {
+        width: 100%;
+    }
 }

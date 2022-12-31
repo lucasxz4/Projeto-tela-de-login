@@ -46,7 +46,6 @@ main > form {
     -webkit-backdrop-filter: blur(10px);
     border-radius: 10px;
     overflow: hidden;
-    padding: 10px 0px;
 }
 
 main > form > div.imagem > img{
